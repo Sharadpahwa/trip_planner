@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "38779707818",
+    "firebase_url": "https://new-trip-planner.firebaseio.com",
+    "project_id": "new-trip-planner",
+    "storage_bucket": "new-trip-planner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38779707818:android:096b3c77e8a444509c8bd3",
+        "android_client_info": {
+          "package_name": "mobile.android.trip.planner.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38779707818-35bo1p17qbt41esk5328u1agaioave24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHussXXaNuVO5CUY-hDF9NG_b52_T2AuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38779707818-35bo1p17qbt41esk5328u1agaioave24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

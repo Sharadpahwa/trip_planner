@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".activities.LoginActivity">
+
+    <mobile.android.trip.planner.app.util.AutoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="241dp"
+        android:layout_below="@+id/lay"
+        android:layout_centerHorizontal="true"
+
+
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/view_pager"
+        android:layout_marginTop="16dp"
+
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        app:tabBackground="@drawable/viewpager_tab_selector"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="0dp" />
+
+    <!--<ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+
+        android:src="@drawable/planning"></ImageView>-->
+
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:text="@string/get_started"
+        android:textColor="#fff"></Button>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGetStarted"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:text="Login"
+        android:textColor="#FFF"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtRegister"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_button"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_regular"
+        android:paddingLeft="@dimen/desc_padding"
+        android:paddingRight="@dimen/desc_padding"
+        android:text="@string/register"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/slide_desc" >
+
+
+    </Button>
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logoposter" />
+
+
+</RelativeLayout>

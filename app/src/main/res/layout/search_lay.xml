@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/topLay"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            android:tint="@color/mdtp_white"
+            android:src="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageView>
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingBottom="10dp"
+
+            android:text="Destination Location"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+        <TextView
+            android:id="@+id/count"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/poppins_regular"
+            android:paddingBottom="10dp"
+
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="22dp" />
+        <ImageView
+            android:id="@+id/done"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            android:tint="@color/mdtp_white"
+            android:src="@drawable/check"
+            android:layout_width="50dp"
+            android:layout_height="50dp"></ImageView>
+    </RelativeLayout>
+
+
+    <!-- <ListView
+         android:id="@+id/searchResultLV"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+
+         android:background="@color/quantum_white_100"
+         android:scrollbars="vertical"
+          />-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/topLay"
+        android:id="@+id/searchResultLV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        />
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:visibility="gone"
+        android:id="@+id/mkloader"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        app:mk_color="@color/colorPrimary"
+        app:mk_type="TwinFishesSpinner" />
+</RelativeLayout>

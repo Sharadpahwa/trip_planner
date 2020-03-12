@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/register_bg3">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorPrimary">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp"
+
+                android:tint="@color/mdtp_white"
+                android:src="@drawable/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingBottom="10dp"
+
+                android:text="Destination details"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="22dp" />
+        </RelativeLayout>
+        <fragment android:id="@+id/autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userLay"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:textColorHint="@color/colorBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/user"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Trip title"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/BackgroundtWhiteColor"
+                android:textSize="18sp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColorHint="@color/colorBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableStart="@drawable/user"
+                android:drawablePadding="5dp"
+                android:focusable="false"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/destination"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+
+                android:singleLine="true"
+                android:textSize="18sp"></com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--<com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/pin"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/country"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:singleLine="true"></com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/pin"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/state"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+
+                android:singleLine="true"></com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColorHint="@color/colorBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/calendar"
+                android:drawablePadding="5dp"
+                android:focusable="false"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/start_date"
+                android:imeOptions="actionNext"
+                android:inputType="date"
+                android:maxLines="1"
+
+                android:singleLine="true"
+                android:textSize="18sp"></com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColorHint="@color/colorBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtConfPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/calendar"
+                android:drawablePadding="5dp"
+                android:focusable="false"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/end_date"
+                android:imeOptions="actionDone"
+                android:inputType="date"
+                android:maxLines="1"
+
+                android:singleLine="true"
+                android:textSize="18sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/btnGetStarted"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:paddingStart="80dp"
+            android:paddingEnd="80dp"
+            android:text="@string/submit"
+            android:textColor="#FFF" />
+    </LinearLayout>
+</ScrollView>

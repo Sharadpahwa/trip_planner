@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.MainActivity">
+        <!--<RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:paddingBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+
+                android:text="@string/home"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="22dp" />
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_alignParentBottom="true"
+                android:tint="@color/quantum_white_100"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/logout"
+                android:layout_width="35dp"
+                android:layout_height="40dp"></ImageView>
+        </RelativeLayout>-->
+        <!-- <ImageView
+
+             android:layout_gravity="center"
+             android:src="@drawable/destination_img"
+             android:id="@+id/locationSearch"
+             android:layout_width="match_parent"
+             android:layout_height="120dp"></ImageView>
+         <TextView
+             android:paddingBottom="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_centerInParent="true"
+             android:fontFamily="@font/poppins_regular"
+
+             android:text="Tap on it to find destination"
+             android:textAlignment="center"
+             android:textColor="@color/colorPrimaryDark"
+             android:textSize="22dp" />
+
+         <ImageView
+
+             android:layout_gravity="center"
+             android:src="@drawable/flight_booking"
+             android:id="@+id/bookFlight"
+             android:layout_width="match_parent"
+             android:layout_height="120dp"></ImageView>
+         <TextView
+             android:paddingBottom="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_centerInParent="true"
+             android:fontFamily="@font/poppins_regular"
+
+             android:text="Tap on it to find flight"
+             android:textAlignment="center"
+             android:textColor="@color/colorPrimaryDark"
+             android:textSize="22dp" />
+         <ImageView
+
+             android:layout_gravity="center"
+             android:src="@drawable/restaurants_logo"
+             android:id="@+id/findRestaurants"
+             android:layout_width="match_parent"
+             android:layout_height="120dp"></ImageView>
+         <TextView
+             android:paddingBottom="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_centerInParent="true"
+             android:fontFamily="@font/poppins_regular"
+
+             android:text=" Find perfect restaurant near by you"
+             android:textAlignment="center"
+             android:textColor="@color/colorPrimaryDark"
+             android:textSize="22dp" />
+         <ImageView
+
+             android:layout_gravity="center"
+             android:src="@drawable/planned_trip"
+             android:id="@+id/findPlannerTrip"
+             android:layout_width="match_parent"
+             android:layout_height="120dp"></ImageView>
+         <TextView
+             android:paddingBottom="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_centerInParent="true"
+             android:fontFamily="@font/poppins_regular"
+
+             android:text="Tap on it to see planned trip details"
+             android:textAlignment="center"
+             android:textColor="@color/colorPrimaryDark"
+             android:textSize="22dp" />
+
+         <ImageView
+     android:background="@color/mdtp_white"
+             android:layout_gravity="center"
+             android:src="@drawable/wishlist"
+             android:id="@+id/findWishList"
+             android:layout_width="match_parent"
+             android:layout_height="120dp"></ImageView>
+         <TextView
+             android:paddingBottom="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_centerInParent="true"
+             android:fontFamily="@font/poppins_regular"
+
+             android:text="Tap on it to see wish list"
+             android:textAlignment="center"
+             android:textColor="@color/colorPrimaryDark"
+             android:textSize="22dp" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/locationSearch"
+                    android:background="@color/purple"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/planned_trip1"></ImageView>
+                    <TextView
+                        android:paddingBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/poppins_regular"
+
+                        android:text="Tap on it to plan trip"
+                        android:textAlignment="center"
+                        android:textColor="@color/mdtp_white"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/findRestaurants"
+                    android:background="@color/quantum_yellow700"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/fastfood_drink_menu_burger"></ImageView>
+                    <TextView
+                        android:paddingBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/poppins_regular"
+
+                        android:text=" Find perfect restaurant near by you"
+                        android:textAlignment="center"
+                        android:textColor="@color/mdtp_white"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/bookFlight"
+                    android:background="@color/quantum_grey500"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/fight_takeoff"></ImageView>
+                    <TextView
+                        android:paddingBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/poppins_regular"
+
+                        android:text="Tap on it to find flight"
+                        android:textAlignment="center"
+                        android:textColor="@color/mdtp_white"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <RelativeLayout
+                android:background="@color/light_g"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"></RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/findPlannerTrip"
+                    android:background="@color/sky"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/planned_trip_2"></ImageView>
+                    <TextView
+                        android:paddingBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/poppins_regular"
+
+                        android:text="Tap on it to see planned trip details"
+                        android:textAlignment="center"
+                        android:textColor="@color/mdtp_white"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/findWishList"
+                    android:background="@color/lightgreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/wishlist1"></ImageView>
+                    <TextView
+                        android:paddingBottom="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/poppins_regular"
+
+                        android:text="Tap on it to see wish list"
+                        android:textAlignment="center"
+                        android:textColor="@color/mdtp_white"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:background="@color/red"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"></RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

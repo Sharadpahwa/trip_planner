@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/register_bg3">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorPrimary">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp"
+
+                android:tint="@color/mdtp_white"
+                android:src="@drawable/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingBottom="10dp"
+
+                android:text="@string/forgot_password_a"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="22dp" />
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userLay"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:textColorHint="@color/colorBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="5dp"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="@string/email_id"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="18sp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:visibility="gone"
+
+            android:id="@+id/passLay"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawablePadding="5dp"
+
+                android:drawableStart="@drawable/lock"
+                android:layout_below="@+id/userLay"
+                android:fontFamily="@font/poppins_regular"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:hint="New Password"
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btnCheckSet"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/btnGetStarted"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/bg_button"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:paddingStart="80dp"
+            android:paddingEnd="80dp"
+            android:text="Set new password"
+            android:textColor="#FFF"></Button>
+        <Button
+            android:id="@+id/btnCheckEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/btnGetStarted"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/bg_button"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:paddingStart="80dp"
+            android:paddingEnd="80dp"
+            android:text="Check Email"
+            android:textColor="#FFF"></Button>
+        <com.tuyenmonkey.mkloader.MKLoader
+            android:visibility="gone"
+           android:layout_gravity="center"
+            android:id="@+id/mkloader"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            app:mk_color="@color/colorPrimary"
+            app:mk_type="TwinFishesSpinner" />
+    </LinearLayout>
+
+</ScrollView>

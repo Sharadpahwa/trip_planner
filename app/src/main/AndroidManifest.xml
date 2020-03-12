@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mobile.android.trip.planner.app">
+
+    <application
+        android:name=".util.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Reply.DayNight">
+        <activity android:name=".activities.PlannedTripActivity" android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme" android:windowSoftInputMode="adjustPan"  ></activity>
+        <activity android:name=".activities.WishListActivity" android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme"  android:windowSoftInputMode="adjustPan" ></activity>
+        <activity
+            android:name=".activities.PathTrackingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme" android:windowSoftInputMode="adjustPan"  />
+        <activity
+            android:name=".activities.MapsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme" android:windowSoftInputMode="adjustPan"  />
+        <activity
+            android:name=".activities.SearchLocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.DestinatioLocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.PlannedtripListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.PlanTripActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.NearByRestaurantsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.ForgotPassActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".activities.AdminHome"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.GetStartedActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyMaterialTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/actionTheme" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/key_google_apis_android" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+</manifest>

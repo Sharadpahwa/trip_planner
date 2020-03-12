@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/toplay"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorPrimary">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp"
+
+                android:tint="@color/mdtp_white"
+                android:src="@drawable/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></ImageView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:paddingBottom="10dp"
+
+                android:text="Restaurants near by you"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="22dp" />
+        </RelativeLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@+id/toplay"
+        android:id="@+id/userLay"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/pin"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="@string/location"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/userLay"
+            android:id="@+id/searchResultLV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+           />
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:visibility="gone"
+        android:id="@+id/mkloader"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        app:mk_color="@color/colorPrimary"
+        app:mk_type="TwinFishesSpinner" />
+    </RelativeLayout>
