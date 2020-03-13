@@ -52,7 +52,8 @@
         android:paddingStart="80dp"
         android:paddingEnd="80dp"
         android:text="@string/get_started"
-        android:textColor="#fff"></Button>
+        android:textColor="#fff"
+        android:textColorHighlight="#FFFFFF"></Button>
 
     <Button
         android:id="@+id/btnLogin"
@@ -66,7 +67,8 @@
         android:paddingStart="80dp"
         android:paddingEnd="80dp"
         android:text="Login"
-        android:textColor="#FFF"></Button>
+        android:textColor="#FFF"
+        android:textColorLink="#FFFFFF"></Button>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

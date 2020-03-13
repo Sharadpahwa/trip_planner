@@ -120,7 +120,9 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
-                android:textColorHint="@color/colorBlack">
+                android:textColorHint="@color/colorBlack"
+                app:hintTextColor="@color/colorBlack">
+
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtEmail"
@@ -179,7 +181,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
-                android:textColorHint="@color/colorBlack">
+                android:textColorHint="@color/colorBlack"
+                app:hintTextColor="@color/colorBlack">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtLocation"
@@ -263,7 +266,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
-                android:textColorHint="@color/colorBlack">
+                android:textColorHint="@color/colorBlack"
+                app:hintTextColor="@color/colorBlack">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtPass"
@@ -292,7 +296,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
-                android:textColorHint="@color/colorBlack">
+                android:textColorHint="@color/colorBlack"
+                app:hintTextColor="@color/colorBlack">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtConfPass"
@@ -338,7 +343,9 @@
                 android:paddingStart="80dp"
                 android:paddingEnd="80dp"
                 android:text="@string/register"
-                android:textColor="#FFF"></Button>
+                android:textColor="#FFF"
+                android:textColorHighlight="@color/bg_slider_screen3"
+                android:textColorLink="#2f86ea"></Button>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

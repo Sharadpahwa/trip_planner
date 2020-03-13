@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="false">
 
     <LinearLayout
@@ -49,7 +50,8 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="50dp"
             android:layout_marginEnd="20dp"
-            android:textColorHint="@color/colorBlack">
+            android:textColorHint="@color/colorBlack"
+            app:hintTextColor="@color/colorBlack">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtUsername"
@@ -79,7 +81,8 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
-            android:textColorHint="@color/colorBlack">
+            android:textColorHint="@color/colorBlack"
+            app:hintTextColor="@color/colorBlack">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtLocation"
@@ -161,7 +164,8 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
-            android:textColorHint="@color/colorBlack">
+            android:textColorHint="@color/colorBlack"
+            app:hintTextColor="@color/colorBlack">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtPass"
@@ -191,7 +195,8 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
-            android:textColorHint="@color/colorBlack">
+            android:textColorHint="@color/colorBlack"
+            app:hintTextColor="@color/colorBlack">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtConfPass"
@@ -223,7 +228,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="50dp"
-            android:background="@drawable/btn_bg"
+            android:background="@drawable/bg_button"
             android:fontFamily="@font/poppins_semi_bold"
             android:paddingStart="80dp"
             android:paddingEnd="80dp"
