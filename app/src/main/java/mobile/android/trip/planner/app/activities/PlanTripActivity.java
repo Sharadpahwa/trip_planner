@@ -1,6 +1,7 @@
 package mobile.android.trip.planner.app.activities;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -67,6 +68,10 @@ public class PlanTripActivity extends AppCompatActivity implements DatePickerDia
 
 // Specify the types of place data to return.
         autocompleteFragment.setPlaceFields(Arrays.asList(Place.Field.ID, Place.Field.NAME));
+        //todo : change the color
+        autocompleteFragment.getView().setBackgroundColor(Color.parseColor("#00000000"));
+        autocompleteFragment.setHint("Destination");
+        autocompleteFragment.getContext().getTheme().applyStyle(R.style.PreferenceScreen, true);
 
 // Set up a PlaceSelectionListener to handle the response.
         autocompleteFragment.setOnPlaceSelectedListener(new PlaceSelectionListener() {
@@ -160,13 +165,12 @@ public class PlanTripActivity extends AppCompatActivity implements DatePickerDia
                     String tripTitle = edtTriptitle.getText().toString().trim();
                     if (plannedList.size() > 0) {
                         for (int i = 0; i < plannedList.size(); i++) {
-                            if(plannedList.get(i).getTripTitle().equals(tripTitle)){
+                            if (plannedList.get(i).getTripTitle().equals(tripTitle)) {
                                 Toast.makeText(PlanTripActivity.this, "This trip is already added", Toast.LENGTH_SHORT).show();
                                 return;
                             }
                         }
                     }
-
 
 
                     Intent intent = new Intent(PlanTripActivity.this, DestinatioLocationActivity.class);

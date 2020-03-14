@@ -42,10 +42,11 @@
                 android:textColor="@android:color/white"
                 android:textSize="22dp" />
         </RelativeLayout>
+
         <LinearLayout
-            android:background="@drawable/register_bg3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/register_bg3"
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
@@ -65,14 +66,14 @@
                     android:id="@+id/edtUsername"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="_,abcdefghijklmnopqrstuvwxyz,ABCDEFGHIJKLMNOPQUSTUVWXYZ,0123456789"
                     android:drawableStart="@drawable/user"
                     android:drawablePadding="5dp"
-                    android:fontFamily="@font/work_sans_bold"
+                    android:fontFamily="@font/poppins_regular"
                     android:imeOptions="actionNext"
                     android:inputType="text"
+                    android:maxLength="20"
                     android:maxLines="1"
-                    android:maxLength="10"
-                    android:digits="_,abcdefghijklmnopqrstuvwxyz,ABCDEFGHIJKLMNOPQUSTUVWXYZ"
                     android:singleLine="true"
                     android:textColor="@color/colorBlack"
                     android:textColorHint="@color/reply_black_900">
@@ -97,6 +98,7 @@
                     android:id="@+id/edtName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:digits="abcdefghijklmnopqrstuvwxyz,ABCDEFGHIJKLMNOPQUSTUVWXYZ "
                     android:drawableStart="@drawable/user"
                     android:drawablePadding="5dp"
                     android:fontFamily="@font/poppins_regular"
@@ -104,7 +106,6 @@
                     android:imeOptions="actionNext"
                     android:inputType="textPersonName"
                     android:maxLines="1"
-                    android:digits="abcdefghijklmnopqrstuvwxyz,ABCDEFGHIJKLMNOPQUSTUVWXYZ "
                     android:singleLine="true"
                     android:textSize="18sp"></com.google.android.material.textfield.TextInputEditText>
 
@@ -164,8 +165,8 @@
                     android:hint="@string/phoneno"
                     android:imeOptions="actionNext"
                     android:inputType="phone"
-                    android:maxLines="1"
                     android:maxLength="10"
+                    android:maxLines="1"
                     android:singleLine="true"
                     android:textSize="18sp"></com.google.android.material.textfield.TextInputEditText>
 
@@ -256,7 +257,6 @@
             </com.google.android.material.textfield.TextInputLayout>-->
 
 
-
             <com.google.android.material.textfield.TextInputLayout
 
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -267,7 +267,8 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
                 android:textColorHint="@color/colorBlack"
-                app:hintTextColor="@color/colorBlack">
+                app:hintTextColor="@color/colorBlack"
+                app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtPass"
@@ -297,7 +298,8 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
                 android:textColorHint="@color/colorBlack"
-                app:hintTextColor="@color/colorBlack">
+                app:hintTextColor="@color/colorBlack"
+                app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtConfPass"
@@ -318,18 +320,19 @@
 
 
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.tuyenmonkey.mkloader.MKLoader
-                android:layout_marginTop="10dp"
-                android:visibility="gone"
-                android:layout_gravity="center"
                 android:id="@+id/mkloader"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
                 app:mk_color="@color/colorPrimary"
                 app:mk_type="TwinFishesSpinner" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btnRegister"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
@@ -343,9 +346,7 @@
                 android:paddingStart="80dp"
                 android:paddingEnd="80dp"
                 android:text="@string/register"
-                android:textColor="#FFF"
-                android:textColorHighlight="@color/bg_slider_screen3"
-                android:textColorLink="#2f86ea"></Button>
+                android:textColor="#FFF"></androidx.appcompat.widget.AppCompatButton>
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
