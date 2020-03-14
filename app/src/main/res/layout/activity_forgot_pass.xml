@@ -136,7 +136,8 @@
             android:layout_height="70dp"
             android:layout_centerInParent="true"
             app:mk_color="@color/colorPrimary"
-            app:mk_type="TwinFishesSpinner" />
+            app:mk_type="TwinFishesSpinner"
+            />
     </LinearLayout>
 
 </ScrollView>
