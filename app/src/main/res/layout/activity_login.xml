@@ -76,7 +76,7 @@
                         android:layout_marginRight="10dp"
                         android:drawableStart="@drawable/user"
                         android:drawablePadding="5dp"
-                        android:digits="_,abcdefghijklmnopqrstuvwxyz,ABCDEFGHIJKLMNOPQUSTUVWXYZ"
+                        android:digits="_,abcdefghijklmnopqrstuvwxyz,ABCDEFGHIJKLMNOPQUSTUVWXYZ,0123456789"
                         android:fontFamily="@font/poppins_regular"
                         android:hint="@string/username"
                         android:imeOptions="actionNext"
