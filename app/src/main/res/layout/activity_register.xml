@@ -190,7 +190,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:clickable="true"
-                    android:drawableStart="@drawable/location3"
+                    android:drawableStart="@drawable/location2"
                     android:drawablePadding="5dp"
                     android:focusable="false"
                     android:fontFamily="@font/poppins_regular"
