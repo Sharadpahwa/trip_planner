@@ -91,6 +91,29 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/open_text_view"/>
 
+
+
+
+<!--                <TextView-->
+                    android:id="@+id/subject_text_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/grid_1"
+                    android:layout_marginEnd="@dimen/grid_2"
+                    android:layout_marginStart="@dimen/grid_2"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    app:layout_goneMarginEnd="@dimen/grid_2"
+                    android:maxLines="1"
+                    android:text="@{email.subject}"
+                    tools:text="Location Name!"
+                    app:layout_constraintEnd_toStartOf="@+id/profile_image_view"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/open_text_view"/>
+
+
+
+
+
                 <TextView
                     android:textAppearance="?attr/textAppearanceBody1"
                     android:id="@+id/body_preview_text_view"
@@ -119,8 +142,21 @@
                     android:contentDescription="@string/email_sender_profile_content_desc"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                  
-                     />
+                    />
+
+
+<!--                <ImageView-->
+                    android:id="@+id/profile_image_view"
+                    android:layout_width="@dimen/email_sender_profile_image_size"
+                    android:layout_height="@dimen/email_sender_profile_image_size"
+                    android:layout_marginTop="@dimen/grid_1"
+                    android:layout_marginStart="@dimen/grid_2"
+                    android:layout_marginEnd="@dimen/grid_2"
+                    android:contentDescription="@string/email_sender_profile_content_desc"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
 
                 <ImageView
                     android:visibility="gone"
